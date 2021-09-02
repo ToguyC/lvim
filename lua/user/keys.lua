@@ -21,6 +21,18 @@ lvim.keys.normal_mode["<A-k>"] = ":move -2<CR>"
 -- Save
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
+-- Run script
+lvim.builtin.which_key.mappings.r = {
+  name = "Run current file",
+  p = { ":!python %<CR>", "Python" }
+}
+
+-- Debug
+lvim.keys.normal_mode["<F5>"] = "<cmd>lua require('dap').continue()<CR>"
+lvim.keys.normal_mode["<F8>"] = "<cmd>lua require('dap').toggle_breakpoint()<CR>"
+lvim.keys.normal_mode["<F9>"] = "<cmd>lua require('dap').step_over()<CR>"
+lvim.keys.normal_mode["<F10>"] = "<cmd>lua require('dap').step_into()<CR>"
+
 -- Misc
 -- Misc
 lvim.builtin.which_key.mappings.a = {
