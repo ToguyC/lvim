@@ -146,6 +146,7 @@ lvim.plugins = {
   {
     'nvim-telescope/telescope-media-files.nvim'
   },
+  { "wakatime/vim-wakatime" },
 }
 
 -- custom builtin plugin config
